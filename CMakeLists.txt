@@ -14,9 +14,11 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 add_executable(udpServer
   main.cpp
-  udpserver.h
-  udpserver.h
-  udpserver.cpp
+  Server.h
+  Server.h
+  Server.cpp
+  udpclient.h
+  udpclient.cpp
 )
 target_link_libraries(udpServer Qt${QT_VERSION_MAJOR}::Core)
 
